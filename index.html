@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site - By Aahaan Sethi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo">WEATHER</h1>
+            <div class="header-buttons">
+                <button id="theme-toggle">☀️ / 🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="search-section container">
+        <input id="city-input" type="text" placeholder="Enter City Name">
+        <button id="search-btn" type="button">Search</button>
+        <button id="location-btn" type="button">Use my Location</button>
+    </section>
+
+    <main class="container">
+        <section id="current-weather" class="weather-card">
+            <h2 id="city-name">City Name</h2>
+            <div class="weather-info">
+                <div>🌡️ Temperature : <span id="temperature">--°C</span></div>
+                <div>☁️ Condition : <span id="condition">--</span></div>
+                <div>💧Humidity : <span id="humidity">--%</span></div>
+                <div>🌬️ Wind : <span id="wind">-- km/h</span></div>
+            </div>
+        </section>
+
+        <section class="forecast-section">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast" class="forecast-grid"></div>
+        </section>
+
+        <section class="recent-searches">
+            <h2>Recent Searches</h2>
+            <div id="recent-searches"></div>
+            <button id="clear-recent-btn">Clear</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2025 Aahaan Sethi
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
