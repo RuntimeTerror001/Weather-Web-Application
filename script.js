@@ -24,7 +24,7 @@ function fetchWeather(city) {
   const currentUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
-  // Current Weather
+ 
   fetch(currentUrl)
     .then(response => response.json())
     .then(data => {
@@ -41,7 +41,6 @@ function fetchWeather(city) {
       alert("⚠️ Could not fetch weather data. Please try again.");
     });
 
-  // 5-Day Forecast
   fetch(forecastUrl)
     .then(response => response.json())
     .then(data => {
